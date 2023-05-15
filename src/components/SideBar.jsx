@@ -3,7 +3,7 @@ import { categories } from '../utils/constants'
 
 
 const SideBar = ({selectedCategory,setSelectedCategory}) => (
-    <Stack direction="row" sx={{overflowY:"auto",
+    <Stack direction="row" sx={{overflowY:"scroll",
     height:{sx:"auto", md:"95%"},flexDirection:{md:"column"},}}>
         {categories.map((category) => (
             <button
@@ -18,7 +18,7 @@ const SideBar = ({selectedCategory,setSelectedCategory}) => (
                 <span style={{ color:category.name === selectedCategory ? "white" :
                 "red", marginRight:"15px" }}>
                     {category.icon}</span>
-                <span style={{ opacity:category.name === selectedCategory ? "1" : "0.8"}}>
+                <span style={{ opacity:category.name === selectedCategory ? "1" : "0.8",color:'#000'}}>
                     {category.name}</span>
             </button>
         ))}

@@ -29,12 +29,12 @@ const VideoDetail = () => {
         <Box flex={1}>
           <Box sx={{width:"100%", position:"sticky",top:"86px"}}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls/>
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+            <Typography color="#000" variant="h5" fontWeight="bold" p={2}>
               {title}
             </Typography>
-            <Stack direction="row" justifyContent="space-between" sx={{color:"#fff"}} py={1} px={2}>
+            <Stack direction="row" justifyContent="space-between" sx={{color:"#000"}} py={1} px={2}>
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm:"subtitle1", md:"h6"}} color="#fff">
+                <Typography variant={{ sm:"subtitle1", md:"h6"}} color="#000">
                   {channelTitle}
                   <CheckCircle sx={{ fontSize:"12px",color:"gray",ml:"5px"}}/>
                 </Typography>
